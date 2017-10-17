@@ -14,6 +14,7 @@ const q = require('q');
 const cors = require('cors');
 const app = express();
 const pt = require('./promisetest');
+const rxt = require('./rxtest');
 
 //*****  turning on cors to allow cross domain  *****
 app.use(cors());
@@ -33,7 +34,8 @@ app.get('/sharedid/:sharedid', function(req, res) { //13810705
 
 app.get('/:flavor', function(req, res) {
 
-	pt.test1();
+	//pt.test1();
+	rxt.rxTest1();
 
 
 	res.end(' flavor is: ' + req.params.flavor);
