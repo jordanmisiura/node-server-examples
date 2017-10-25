@@ -32,14 +32,20 @@ app.get('/sharedid/:sharedid', function(req, res) { //13810705
 		});
 });
 
-app.get('/:flavor', function(req, res) {
-
-	//pt.test1();
-	rxt.rxTest1();
-
-
-	res.end(' flavor is: ' + req.params.flavor);
+app.get('/logger.js', function(req, res) {
+	console.log("message from logger: " );
+	console.log(res);
+	res.end('message from logger: ', res);
 });
+
+// app.get('/:flavor', function(req, res) {
+
+// 	//pt.test1();
+// 	rxt.rxTest1();
+
+
+// 	res.end(' flavor is: ' + req.params.flavor);
+// });
 
 app.get('*', fourohfour);
 

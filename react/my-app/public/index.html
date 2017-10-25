@@ -1,6 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script type="text/javascript" src="http://jserrlog.appspot.com/jserrlog-min.js"></script>
+    <script type="text/javascript">
+        // Configure site parameters
+      // Optional to allow the error message to also be presented to the user
+        //jsErrLog.debugMode = true;
+        // Optionally add additional debug information to the jsErrLog.info
+        // message field
+        //jsErrLog.info = "Populated the Info Message to pass to logger"
+        // Optionally specify URL to which the logging should be done
+        jsErrLog.url = "http://localhost:8080/logger.js";
+      // Optionally specify certain querystring parameters never to pass to the logging service
+      // either on the fileloc or the server name. Simply list them in the array
+      // and script will check for them (case insensitive)
+      //jsErrLog.qsIgnore = ["userid","password"];
+      // If you want to ignore certain domains from reporting (eg Twitter API) add them to
+      //jsErrLog.domainIgnore = ["http://ignore.domain.com","https://do.not.track.net"]
+      // Limit number of errors that will be sent for a page (default is 10, -1 allows infinite)
+      jsErrLog.maxRep = 10;
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
