@@ -1,0 +1,33 @@
+{
+  "name": "nodeserverwork",
+  "version": "0.0.1",
+  "description": "microservice poc",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "q": "^1.5.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4",
+    "rx": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanmisiura/node-server-examples.git"
+  },
+  "keywords": [
+    "microservice"
+  ],
+  "author": "jordan misiura",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jordanmisiura/node-server-examples/issues"
+  },
+  "homepage": "https://github.com/jordanmisiura/node-server-examples#readme"
+}
