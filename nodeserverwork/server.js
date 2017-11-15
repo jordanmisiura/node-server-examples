@@ -42,18 +42,12 @@ app.get('/:flavor', function(req, res) {
 	res.end(' flavor is: ' + req.params.flavor);
 });
 
-app.get('*', fourohfour);
-
 app.post('/password', (req, res) => {
 		console.log("post command activated from password url: ");
 		console.log(req.body);
 
 		res.end('received password');
 });
-
-function fourohfour(req, res) {
-	handleError(res, 404, "invalid file");
-}
 
 function handleError(res, errcode, message) {
 	res.writeHead(errcode, { "Content-Type" : "application/json" });

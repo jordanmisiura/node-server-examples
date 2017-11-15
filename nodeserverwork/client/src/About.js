@@ -9,7 +9,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         {this.renderButton("click this to ping server")}
       </div>
     );
