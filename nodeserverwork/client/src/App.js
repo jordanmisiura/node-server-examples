@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import TabComponent from './TabComponent.jsx'
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({
-      hasHeader: false
+      hasHeader: true
     });
   }
 
@@ -23,6 +24,7 @@ class App extends Component {
         <p className="App-intro">
           App.js div and p  component mounted.
         </p>
+        <TabComponent />
       </div>
     ) : ( <div></div> );
   }
